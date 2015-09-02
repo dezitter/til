@@ -8,3 +8,4 @@ Inspired by [thoughbot/til](https://github.com/thoughtbot/til).
 * [Command Line](cli.md)
 * [Git](git.md)
 * [NodeJS](nodejs.md)
+* [ES6](es6.md)
