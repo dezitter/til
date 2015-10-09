@@ -39,3 +39,11 @@ See [cURL POST tutorial](http://curl.haxx.se/docs/httpscripting.html#POST)
 
     > This kind of POST will use the Content-Type application/x-www-form-urlencoded
       and is the most widely used POST kind.
+
+## Browserify and shimmed modules
+
+Since purpose of Browserify is to provide a bundle for a browser, some Node's specifics modules are replaced by
+a shimmed version of them to provide more compatibility between client & server code (case of an Isomorphic
+application).
+
+More details at [Browserify compatibility documentation](https://github.com/substack/node-browserify#compatibility).
