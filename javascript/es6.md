@@ -21,28 +21,34 @@ callback is attached the error will be "swallowed" and the failure silent.
 
 For example:
 
-    const promise = new Promise(function() {
-        throw new Error('boom');
-    });
+```javascript
+const promise = new Promise(function() {
+    throw new Error('boom');
+});
 
-    // 'promise' is rejected, no 'onRejected' callback is attached so the failure is silent
+// 'promise' is rejected, no 'onRejected' callback is attached so the failure is silent
+```
 
 Similarly:
 
-    const promise = new Promise(function(resolve, reject) {
-        resolve(42);
-    });
+```javascript
+const promise = new Promise(function(resolve, reject) {
+    resolve(42);
+});
 
-    const promise2 = promise.then(function(value) {
-        throw new Error('boom');
-    });
+const promise2 = promise.then(function(value) {
+    throw new Error('boom');
+});
 
-    // 'promise2' is now rejected, no onRejected callback so the failure is silent
+// 'promise2' is now rejected, no onRejected callback so the failure is silent
+```
 
 The [RSVP](https://github.com/tildeio/rsvp.js) library helps solving this problem
 by proposing an [error handler](https://github.com/tildeio/rsvp.js#error-handling)
 
-    RSVP.on('error', function(error) { // ... });
+```javascript
+RSVP.on('error', function(error) { // ... });
+```
 
 See [JavaScript Promises - html5rocks](www.html5rocks.com/en/tutorials/es6/promises/)
 
