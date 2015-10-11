@@ -2,11 +2,15 @@
 
 Inspired by [thoughbot/til](https://github.com/thoughtbot/til).
 
-* [Bash](bash.md)
-* [HTML](html.md)
-* [HTTP](http.md)
-* [Command Line](cli.md)
-* [Git](git.md)
-* [NodeJS](nodejs.md)
-* [ES6](es6.md)
-* [ReactJS](reactjs.md)
+* JavaScript
+  * [Es6](javascript/es6.md)
+  * [Nodejs](javascript/nodejs.md)
+  * [Reactjs](javascript/reactjs.md)
+* Unix
+  * [Bash](unix/bash.md)
+  * [Command Line](unix/cli.md)
+  * [Git](unix/git.md)
+  * [Vim](unix/vim.md)
+* Web
+  * [Html](web/html.md)
+  * [Http](web/http.md)
