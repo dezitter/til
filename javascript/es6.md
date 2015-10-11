@@ -4,7 +4,7 @@
 
 ES6 modules are implicitly in strict mode.
 
-See the [spec](S(http://www.ecma-international.org/ecma-262/6.0/#sec-strict-mode-code)
+See the [spec](http://www.ecma-international.org/ecma-262/6.0/#sec-strict-mode-code)
 
     10.2.1 Strict Mode Code
 
