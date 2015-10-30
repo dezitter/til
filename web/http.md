@@ -20,3 +20,16 @@ It is also possible to reconfigure the browser to use different limits.
 
 See also [browserscope](http://www.browserscope.org/?category=network) or
 Steve Souders' [Roundup on Parallel Connections](http://www.stevesouders.com/blog/2008/03/20/roundup-on-parallel-connections/).
+
+## What is HTTP Basic Authentication
+
+A method for a user agent to provide a login/password.
+Uses the `Authorization` field in the HTTP *header* in each requests.
+
+Does not require cookies, sessions or login.
+Typically the browser caches the credentials to avoid asking them to the user
+on each requests.
+
+The credentials "login:password" are encoded in Base64.
+
+See [wikipedia](https://en.wikipedia.org/wiki/Basic_access_authentication)
