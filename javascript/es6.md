@@ -10,6 +10,37 @@ See the [spec](http://www.ecma-international.org/ecma-262/6.0/#sec-strict-mode-c
 
         * Module code is always strict mode code.
 
+## ES6 default parameters
+
+In ES6 functions can have default parameters:
+
+```javascript
+function add(a, b=1) {
+    return a + b;
+}
+
+add(1);    // 2
+add(1, 2); // 3
+```
+
+Beware that default parameters are:
+
+* evaluated at **call** time (a new object is created each time the function is called, unlike Python)
+* default objects do not "traverse" properties, the entire object is "defaulted" (see example)
+
+```javascript
+// accept 'first' and 'second' options
+function f(options={ second=42 }) {
+    options.first //...
+    options.second //...
+}
+
+f();            // first=undefined, second=42
+f({first: 41}); // first=41,        second=undefined
+```
+
+See [MDN](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Functions/default_parameters)
+
 ## Promises can "swallow" errors
 
 If an error is thrown during the promise constructor or in one of the `.then`
