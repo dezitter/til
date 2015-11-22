@@ -28,3 +28,19 @@ Useful when the output of one command in on multiple lines, and a single line is
 
 Uses the `rev` command to reverse all characters, select the first field,
 then reverse again.
+
+## Repeat the previous command
+
+    $!!
+
+## Repeat the previous command and substitute a string
+
+To repeat the previous command but replace the *first occurence* of "foo" with "bar":
+
+    $ !!:s/foo/bar
+
+For a global substitution:
+
+    $ !!:gs/foo/bar
+
+See **Event designators** in `man bash`.
