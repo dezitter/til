@@ -6,6 +6,8 @@ Inspired by [thoughbot/til](https://github.com/thoughtbot/til).
   * [Es6](javascript/es6.md)
   * [Nodejs](javascript/nodejs.md)
   * [Reactjs](javascript/reactjs.md)
+* Scipy
+  * [Numpy (ipynb)](scipy/numpy.ipynb)
 * Unix
   * [Bash](unix/bash.md)
   * [Command Line](unix/cli.md)
