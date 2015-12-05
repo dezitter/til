@@ -2,7 +2,7 @@
 
 ## Bundler.require
 
-Putting the following snippet in your app
+Putting the following snippet in your app:
 
     require 'rubygems'
     require 'bundler/setup'
@@ -22,7 +22,7 @@ See [bundler.io](http://bundler.io/v1.10/bundler_setup.html)
 The [mustache-sinatra](https://github.com/mustache/mustache-sinatra) gem depends
 on [sinatra](http://www.sinatrarb.com/), **but does not require it**.
 
-When using `Bundler.require`, if the Gemfile specifies:
+When using `Bundler.require` (see above), if the Gemfile specifies:
 
     gem 'mustache-sinatra'
     gem 'sinatra'
@@ -35,16 +35,19 @@ See [Ruby Require Order Problems by yehudakatz](http://yehudakatz.com/2010/04/17
 
 See also [bundler "Order" spec suite](https://github.com/bundler/bundler/blob/v1.10.6/spec/runtime/require_spec.rb#L230):
 
-The spec works with the gem `One` using **but not requiring** the gem `Two`, which is standalone.
+The suite makes use of two gems:
+
+* `one.rb` uses **but not require** the gem `two.rb`
+* `two.rb` which is standalone
 
     # Gemfile
     gem 'one'
     gem 'two'
 
-works, see (l.255)[https://github.com/bundler/bundler/blob/v1.10.6/spec/runtime/require_spec.rb#L255]
+works, see [l.255](https://github.com/bundler/bundler/blob/v1.10.6/spec/runtime/require_spec.rb#L255)
 
     # Gemfile
     gem 'two'
     gem 'one'
 
-fails, see (l.295)[https://github.com/bundler/bundler/blob/v1.10.6/spec/runtime/require_spec.rb#L295]
+fails, see [l.295](https://github.com/bundler/bundler/blob/v1.10.6/spec/runtime/require_spec.rb#L295)
