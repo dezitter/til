@@ -44,3 +44,33 @@ For a global substitution:
     $ !!:gs/foo/bar
 
 See **Event designators** in `man bash`.
+
+## Move files without overwritting existing names
+
+`mv` supports a **--backup** option to rename the source file if a destination
+of the same name exists.
+
+Example with the tree below:
+
+    src/
+    |__ bar
+    |__ foo
+
+    dest/
+    |__ foo
+
+Running:
+
+```bash
+# use 'numbered' backup
+$ mv --backup=t src/* dest/
+```
+
+results in:
+
+    src/
+
+    dest/
+    |__ bar
+    |__ foo
+    |__ foo.~1~ # original dest/foo
