@@ -18,3 +18,4 @@ Inspired by [thoughbot/til](https://github.com/thoughtbot/til).
   * [Http](web/http.md)
 * Ruby
   * [Bundler](ruby/bundler.md)
+  * [Rails](ruby/rails.md)
