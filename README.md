@@ -18,4 +18,5 @@ Inspired by [thoughbot/til](https://github.com/thoughtbot/til).
   * [Http](web/http.md)
 * Ruby
   * [Bundler](ruby/bundler.md)
+  * [Object](ruby/object.md)
   * [Rails](ruby/rails.md)
