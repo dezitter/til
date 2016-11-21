@@ -3,6 +3,7 @@
 Inspired by [thoughbot/til](https://github.com/thoughtbot/til).
 
 * JavaScript
+  * [String](javascript/string.md)
   * [Es6](javascript/es6.md)
   * [Nodejs](javascript/nodejs.md)
   * [Reactjs](javascript/reactjs.md)
