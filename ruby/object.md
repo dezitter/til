@@ -1,6 +1,4 @@
-# Today I Learned Ruby - Object
-
-## #is_a? vs #kind_of? vs #instance_of?
+# #is_a? vs #kind_of? vs #instance_of?
 
 Given the following example:
 

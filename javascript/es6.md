@@ -1,6 +1,4 @@
-# Today I Learned ES
-
-## ES6 and strict mode
+# ES6 and strict mode
 
 ES6 modules are implicitly in strict mode.
 
@@ -10,7 +8,7 @@ See the [spec](http://www.ecma-international.org/ecma-262/6.0/#sec-strict-mode-c
 
         * Module code is always strict mode code.
 
-## ES6 default parameters
+# ES6 default parameters
 
 In ES6 functions can have default parameters:
 
@@ -41,7 +39,7 @@ f({first: 41}); // first=41,        second=undefined
 
 See [MDN](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Functions/default_parameters)
 
-## Promises can "swallow" errors
+# Promises can "swallow" errors
 
 If an error is thrown during the promise constructor or in one of the `.then`
 callbacks *(onFulfilled/onRejected)*, the error is automatically caught and the

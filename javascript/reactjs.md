@@ -1,6 +1,4 @@
-# Today I Learned ReactJS
-
-## 'this' binding and React classes
+# 'this' binding and React classes
 
 `React.createClass` autobinds methods.
 

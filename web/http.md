@@ -1,6 +1,4 @@
-# Today I Learned - HTTP
-
-## What is the maximum number of connections a browser can make ?
+# What is the maximum number of connections a browser can make ?
 
 Theoretically, a limit of two connections per hostname is suggested by **HTTP/1.1**.
 
@@ -21,7 +19,7 @@ It is also possible to reconfigure the browser to use different limits.
 See also [browserscope](http://www.browserscope.org/?category=network) or
 Steve Souders' [Roundup on Parallel Connections](http://www.stevesouders.com/blog/2008/03/20/roundup-on-parallel-connections/).
 
-## What is HTTP Basic Authentication
+# What is HTTP Basic Authentication
 
 A method for a user agent to provide a login/password.
 Uses the `Authorization` field in the HTTP *header* in each requests.

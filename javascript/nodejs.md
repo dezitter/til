@@ -1,6 +1,4 @@
-# Today I Learned - NodeJS
-
-## npm run && PATH
+# npm run && PATH
 
 When you execute a script declared in your *package.json*:
 
@@ -17,7 +15,7 @@ In this particular example there would be no need to install *gulp* globally.
 
 See [docs.npmjs.com/misc/scripts#path](https://docs.npmjs.com/misc/scripts#path)
 
-## Testing POST requests using expressjs body-parser
+# Testing POST requests using expressjs body-parser
 
 The `content-type` parsed by the json [expressjs/body-parser](https://github.com/expressjs/body-parser)
 defaults to *application/json*.
@@ -40,7 +38,7 @@ See [cURL POST tutorial](http://curl.haxx.se/docs/httpscripting.html#POST)
     > This kind of POST will use the Content-Type application/x-www-form-urlencoded
       and is the most widely used POST kind.
 
-## Browserify and shimmed modules
+# Browserify and shimmed modules
 
 Since purpose of Browserify is to provide a bundle for a browser, some Node's specifics modules are replaced by
 a shimmed version of them to provide more compatibility between client & server code (case of an Isomorphic

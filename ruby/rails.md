@@ -1,6 +1,4 @@
-# Today I Learned Rails
-
-## Retrieve the current migration version
+# Retrieve the current migration version
 
     $ rake db:version
     # or

@@ -1,10 +1,8 @@
-# Today I Learned - Bash
-
-## Get the directory of the current running script
+# Get the directory of the current running script
 
     $(dirname "$(readlink -f "$0")")
 
-## Arithmetic operations in BASH
+# Arithmetic operations in BASH
 
 Use the `bc` command:
 
@@ -16,7 +14,7 @@ and the *scale* special argument for floating point numbers:
     $ echo 'scale=2; 1/3' | bc
     .33
 
-## Round numbers
+# Round numbers
 
 Use the `printf` command:
 

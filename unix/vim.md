@@ -1,9 +1,7 @@
-# Today I Learned - Vim
-
-## Count the number of occurences of a pattern
+# Count the number of occurences of a pattern
 
     :%s/foo/&/gn
 
-## Show all lines matching a pattern
+# Show all lines matching a pattern
 
     :g/foo/

@@ -1,6 +1,4 @@
-# Today I Learned Bundler
-
-## Bundler.require
+# Bundler.require
 
 Putting the following snippet in your app:
 
@@ -21,7 +19,7 @@ require 'nokogiri'
 
 See [bundler.io](http://bundler.io/v1.10/bundler_setup.html)
 
-## In your Gemfile, the order might matter
+# In your Gemfile, the order might matter
 
 The [mustache-sinatra](https://github.com/mustache/mustache-sinatra) gem depends
 on [sinatra](http://www.sinatrarb.com/), **but does not require it**.
