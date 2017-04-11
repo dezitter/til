@@ -72,3 +72,7 @@ results in:
     |__ bar
     |__ foo
     |__ foo.~1~ # original dest/foo
+
+# Re-run a command and subtitute a pattern
+
+    !!:s/foo/bar
